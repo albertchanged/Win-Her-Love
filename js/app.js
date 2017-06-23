@@ -6,7 +6,6 @@ var Enemy = function(x, y, speed) {
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
-
     this.x = x;
     this.y = y;
     this.speed = speed;
@@ -44,7 +43,6 @@ Enemy.prototype.render = function() {
 
 var Player = function(x, y, xSpeed, ySpeed) {
     this.sprite = 'images/char-boy.png';
-
     this.x = x;
     this.y = y;
     this.xSpeed = xSpeed;
@@ -84,7 +82,6 @@ Player.prototype.handleInput = function(keypress) {
 
 var Princess = function(x, y) {
     this.sprite = 'images/char-princess-girl.png';
-
     this.x = x;
     this.y = y;
 }
@@ -120,7 +117,7 @@ var keepInFrame = function() {
 }
 
 var checkCollision = function(anEnemy) {
-
+    // If player comes too close to an enemy
     if (player.y + 131 >= anEnemy.y + 90
         && player.x + 25 <= anEnemy.x + 88
         && player.y + 73 <= anEnemy.y + 135
