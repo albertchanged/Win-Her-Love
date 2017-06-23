@@ -118,9 +118,9 @@ var keepInFrame = function() {
 
 var checkCollision = function(anEnemy) {
     // If player comes too close to an enemy
-    if (player.y + 131 >= anEnemy.y + 90
-        && player.x + 25 <= anEnemy.x + 88
-        && player.y + 73 <= anEnemy.y + 135
+    if (player.y + 81 >= anEnemy.y
+        && player.x <= anEnemy.x + 50
+        && player.y <= anEnemy.y + 35
         && player.x + 76 >= anEnemy.x + 11) {
 
         console.log('Oh no, there was a collision!');
