@@ -11,6 +11,8 @@ Use your keyboard arrows to move up, down, left, and right.
 
 You earn 50 points per meeting with the Princess and 100 points earns you one heart.
 
+You lose 25 points for every bug encounter. 
+
 The number of bugs increases with your progress, so beware!
 
 ***Developed for [Udacity's](https://www.udacity.com/) [Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) course.
