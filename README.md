@@ -7,7 +7,13 @@ Overview
 
 In this Frogger-esque JavaScript game, you are a courageous fellow who crosses a bug-infested road to earn hearts from a Princess.
 
-Use your keyboard arrows to move up, down, left, and right. 100 points earns you one heart.
+Use your keyboard arrows to move up, down, left, and right. 
+
+You earn 50 points per meeting with the Princess and 100 points earns you one heart.
+
+The number of bugs increases with your progress, so beware!
+
+
 
 
 From Udacity:
