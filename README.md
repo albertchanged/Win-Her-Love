@@ -1,7 +1,7 @@
 Win Her Love!
 ===============================
 
-### From Albert Chang:
+### From [Albert Chang](http://www.albertchanged.me):
 
 In this Frogger-esque JavaScript game, you are a courageous fellow who crosses a bug-infested road to earn hearts from a Princess.
 
