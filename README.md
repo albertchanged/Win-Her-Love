@@ -1,4 +1,3 @@
-frontend-nanodegree-arcade-game
 Win Her Love!
 ===============================
 
@@ -7,6 +6,8 @@ From Albert Chang:
 Overview
 
 In this Frogger-esque JavaScript game, you are a courageous fellow who crosses a bug-infested road to earn hearts from a Princess.
+
+Use your keyboard arrows to move up, down, left, and right.
 
 
 From Udacity:
