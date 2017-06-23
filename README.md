@@ -1,6 +1,7 @@
 Win Her Love!
 ===============================
 
+## [Click here](https://albertchanged.github.io/Win-Her-Love/) to play the game!
 ### From [Albert Chang](http://www.albertchanged.me):
 
 In this Frogger-esque JavaScript game, you are a courageous fellow who crosses a bug-infested road to earn hearts from a Princess.
