@@ -23,6 +23,8 @@ Enemy.prototype.update = function(dt) {
     // all computers.
     this.x += this.speed * dt;
 
+    // If the enemy has reached the rightmost edge,
+    // return it to the far left to restart cycle
     if (this.x >= 800) {
         this.x = -100;
         this.y = Math.random() * 200 + 50;
@@ -102,6 +104,7 @@ Star.prototype.render = function() {
 }
 
 var keepInFrame = function() {
+    // Prevents player from traveling off screen
     if (player.y > 383) {
         player.y = 383;
     }
@@ -125,12 +128,13 @@ var checkCollision = function(anEnemy) {
 
         console.log('Oh no, there was a collision!');
 
+        // If there is a collision, reduce score by 25
         if (score >= 25) {
             score -= 25;
         }
+        // Return player to original position
         player.x = 303;
         player.y = 383;
-
     }
 }
 
@@ -149,17 +153,19 @@ var reachGoal = function() {
 
             score += 50;
             for (var i = 1; i < 10; i++) {
-                //If score equals multiple of 100 or is within bounds (200 < x < 225 will earn a heart)
+                // If score equals a multiple of 100 or 
+                // is within bounds (200 < x < 225 will earn a heart),
+                // earn a heart
                 if (score === 100*i || (score < (100*i + 26) && (score > (100*i)))) {
                     heart += 1;
                 }
             }
-            //If the player reaches or is within bounds of 1000, they have beaten the game!
+            // If the player reaches or is within bounds of 1000, they have beaten the game!
             if (score === 1000 || (score < (1026) && (score > (1000)))) {
                 window.alert("Congratulations! You have beaten the game. Don't forget to invite me to your wedding with the Princess!");
             }
             level += 1;
-            console.log('Current heart: ' + heart + ', Current Level: ' + level);
+            console.log('Score: ' + score + ', Number of Hearts: ' + heart + ', Current Level: ' + level);
             addMoreEnemies();
         }
         else {
