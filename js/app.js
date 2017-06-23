@@ -26,7 +26,7 @@ Enemy.prototype.update = function(dt) {
     // return it to the far left to restart cycle
     if (this.x >= 800) {
         this.x = -100;
-        this.y = Math.random() * 200;
+        this.y = Math.random() * 200 + 200;
     }
     checkCollision(this);
     reachGoal();
@@ -151,7 +151,7 @@ var reachGoal = function() {
             score += 50;
             for (var i = 1; i < 10; i++) {
                 // If score equals a multiple of 100 or 
-                // is within bounds (200 < x < 225 will earn a heart),
+                // is within bounds (200 < x < 226 will earn a heart),
                 // earn a heart
                 if (score === 100*i || (score < (100*i + 26) && (score > (100*i)))) {
                     heart += 1;
@@ -162,6 +162,8 @@ var reachGoal = function() {
                 window.alert("Congratulations! You have beaten the game. Don't forget to invite me to your wedding with the Princess!");
             }
             level += 1;
+            // localStorage.setItem("highscore", score);
+            // console.log("Your high score is " + localStorage.getItem("highscore"));
             console.log('Score: ' + score + ', Number of Hearts: ' + heart + ', Current Level: ' + level);
             addMoreEnemies();
         }
@@ -187,6 +189,24 @@ var enemy = createEnemy();
 var score = 0;
 var heart = 0;
 var level = 1;
+
+var scores = [];
+scores.push({highscore: score});
+// localStorage["WinHerLove_HighScores"] = JSON.stringify(scores);
+
+
+// if (localStorage) {
+//     localStorage["WinHerLove_HighScores"] = score;
+// }
+// if (localStorage) {
+//     if (localStorage["WinHerLove_HighScores"] !== undefined) {
+//         scores =  Number(localStorage["WinHerLove_HighScores"]);
+//         console.log(scores);
+//     }
+// }
+
+
+console.log(localStorage.getItem("highscore"));
 
 allEnemies.push(enemy);
 
