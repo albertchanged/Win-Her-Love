@@ -2,7 +2,7 @@ Win Her Love
 ===============================
 
 ### [Click here](https://albertchanged.github.io/Win-Her-Love/) to play the game!
-
+----
 ### From [Albert Chang](http://www.albertchanged.me):
 
 In this Frogger-esque JavaScript game, you are a courageous fellow who crosses a bug-infested road to earn hearts from a Princess.
@@ -10,6 +10,8 @@ In this Frogger-esque JavaScript game, you are a courageous fellow who crosses a
 Use your keyboard arrows to move up, down, left, and right. 
 
 You earn 50 points per meeting with the Princess and 100 points earns you one heart.
+
+You lose 25 points for every bug encounter. 
 
 The number of bugs increases with your progress, so beware!
 
