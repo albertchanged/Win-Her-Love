@@ -26,7 +26,7 @@ Enemy.prototype.update = function(dt) {
     // return it to the far left to restart cycle
     if (this.x >= 800) {
         this.x = -100;
-        this.y = Math.random() * 200 + 50; 
+        this.y = Math.random() * 200 + 75; 
     }
     checkCollision(this);
     reachGoal();
