@@ -11,7 +11,7 @@ You earn 50 points per meeting with the Princess and 100 points earns you one he
 
 The number of bugs increases with your progress, so beware!
 
-*****Developed for [Udacity's](https://www.udacity.com/) [Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) course.
+***Developed for [Udacity's](https://www.udacity.com/) [Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) course.
 
 
 
