@@ -135,9 +135,9 @@ var checkCollision = function(anEnemy) {
 }
 
 var displayHeartLevel = function(score, heart, level) {
-    document.getElementById('scores').innerHTML = "<strong>Score:</strong> " + "<span style='font-size: 30px'>" + this.score + "</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    document.getElementById('hearts').innerHTML = "<img src='images/Heart3.png' style='height: 1.5em; vertical-align: middle'>" + " x " + "<span style='font-size: 30px'>" + this.heart + "</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    document.getElementById('levels').innerHTML = "<strong>On Path:</strong> " + "<span style='font-size: 30px'>" + this.level + "</span> <img src='images/enemy-bug2.png' style='vertical-align: middle; height: 1.5em'>";
+    document.getElementById('scores').innerHTML = "<strong>Score:</strong> " + "<span style='font-size: 27.5px'>" + this.score + "</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    document.getElementById('hearts').innerHTML = "<img src='images/Heart3.png' style='height: 1.5em; vertical-align: middle'>" + " x " + "<span style='font-size: 27.5px'>" + this.heart + "</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    document.getElementById('levels').innerHTML = "<strong>On Path:</strong> " + "<span style='font-size: 27.5px'>" + this.level + "</span> <img src='images/enemy-bug2.png' style='vertical-align: middle; height: 1.5em'>";
 }
 
 var reachGoal = function() {
