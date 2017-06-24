@@ -148,14 +148,15 @@ var reachGoal = function() {
             player.y = 383;
             console.log('You made it!');
 
+            heart += 1;
             score += 50;
             for (var i = 1; i < 10; i++) {
-                // If score equals a multiple of 100 or 
+                // FOR PREVIOUS SCORING IDEA: If score equals a multiple of 100 or 
                 // is within bounds (200 < x < 226 will earn a heart),
-                // earn a heart
-                if (score === 100*i || (score < (100*i + 26) && (score > (100*i)))) {
-                    heart += 1;
-                }
+                // earn a heart 
+                // if (score === 100*i || (score < (100*i + 26) && (score > (100*i)))) {
+                //     heart += 1;
+                // }
             }
             // If the player reaches or is within bounds of 1000, they have beaten the game!
             if (score === 1000 || (score < (1026) && (score > (1000)))) {
