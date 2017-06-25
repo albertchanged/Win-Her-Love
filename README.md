@@ -7,7 +7,7 @@ Win Her Love
 
 In this Frogger-esque JavaScript game, you are a courageous fellow who crosses a bug-infested road to earn hearts from a Princess.
 
-Your character has unlimited lives and resets his position for every round.
+You have unlimited lives and will return to your original position for every round.
 
 Use your keyboard arrows to move up, down, left, and right. 
 
