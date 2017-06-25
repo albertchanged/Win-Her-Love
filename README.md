@@ -13,11 +13,9 @@ Use your keyboard arrows to move up, down, left, and right.
 
 You earn 50 points for each heart granted by the Princess.
 
-But you also lose 25 points for every water and bug encounter.
+But watch out! You also lose 25 points for every water and bug encounter.
 
-The number of bugs increases with your progress, so beware!
-
-### TO WIN THIS GAME AND THE PRINCESS'S LOVE, you must accumulate 1000 points.
+### TO BEAT THIS GAME AND WIN HER LOVE, you must accumulate 1000 points.
 
 ***Developed for [Udacity's](https://www.udacity.com/) [Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) course.
 
