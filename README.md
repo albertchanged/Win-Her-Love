@@ -5,7 +5,7 @@ Win Her Love
 ----
 ### From [Albert Chang](http://www.albertchanged.me):
 
-In this Frogger=esque game, you are a courageous boy who crosses a bug-infested path to earn hearts from a Princess.
+In this Frogger-esque game, you are a courageous boy who crosses a bug-infested path to earn hearts from a Princess.
 
 You have unlimited lives and will return to your original position for every round.
 
