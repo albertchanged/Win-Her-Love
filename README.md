@@ -17,7 +17,7 @@ But watch out! You also lose 25 points for every water and bug encounter.
 
 ### TO BEAT THIS GAME AND WIN HER LOVE, you must accumulate 1000 points.
 
-***Developed for [Udacity's](https://www.udacity.com/) [Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) course.
+***Developed using the artwork and engine provided in [Udacity's](https://www.udacity.com/) [Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) course.
 
 
 
