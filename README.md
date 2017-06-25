@@ -5,7 +5,7 @@ Win Her Love
 ----
 ### From [Albert Chang](http://www.albertchanged.me):
 
-In this Frogger-esque JavaScript game, you are a brave fellow who crosses a bug-infested road to earn hearts from a Princess.
+In this Frogger=esque game, you are a courageous boy who crosses a bug-infested path to earn hearts from a Princess.
 
 You have unlimited lives and will return to your original position for every round.
 
@@ -17,7 +17,7 @@ But watch out! You also lose 25 points for every water and bug encounter.
 
 ### TO BEAT THIS GAME AND WIN HER LOVE, you must accumulate 1000 points.
 
-***Developed using the artwork and engine provided in [Udacity's](https://www.udacity.com/) [Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) course.***
+***Developed using the artwork and engine provided in [Udacity's](https://www.udacity.com/) [Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) course.
 
 
 
