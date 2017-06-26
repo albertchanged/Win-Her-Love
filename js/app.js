@@ -226,6 +226,7 @@ var reachGoal = function() {
             // }
             
             // If the player reaches or is within bounds of 1000, they have beaten the game!
+            localStorage.setItem("highscore", score);
             if (score === 1000 || (score < (1026) && (score > (1000)))) {
                 window.alert("Congratulations! You have beaten the game. Don't forget to invite me to your wedding with the Princess!");
             }
@@ -266,21 +267,21 @@ var score = 0;
 var heart = 0;
 var level = 1;
 
-var scores = [];
-localStorage.setItem("highscore", score);
+// var scores = [];
+
 // scores.push({highscore: score});
 // localStorage["WinHerLove_HighScores"] = JSON.stringify(scores);
 
 
-// if (localStorage) {
-//     localStorage["WinHerLove_HighScores"] = score;
-// }
-// if (localStorage) {
-//     if (localStorage["WinHerLove_HighScores"] !== undefined) {
-//         scores =  Number(localStorage["WinHerLove_HighScores"]);
-//         console.log(scores);
-//     }
-// }
+if (localStorage) {
+    localStorage["WinHerLove_HighScores"] = score;
+}
+if (localStorage) {
+    if (localStorage["WinHerLove_HighScores"] !== undefined) {
+        scores =  Number(localStorage["WinHerLove_HighScores"]);
+        console.log(scores);
+    }
+}
 
 var randomizer = function(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
