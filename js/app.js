@@ -1,4 +1,8 @@
 var score = 0;
+localStorage.clear(); // For testing
+if (localStorage.length === 0) {
+    localStorage.setItem("highscore", 0);
+}
 
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
@@ -102,32 +106,7 @@ Princess.prototype.update = function() {
         star.x = princess.x - 5.5;
         console.log("princess is at " + princess.x);
         console.log("player is at " + player.x + " and princess is at " + princess.x);
-        // if (this.x >= 0 && this.x <= 303) {
-        //     this.x = 303 + randomizer(1, 3) * 101;
-        // }
-        // if (this.x >= 303 && this.x <= 606) {
-        //     this.x = 303 - randomizer(1, 4) * 101;
-        // }
-
-        // if (princess.x === 101 || princess.x === 0) {
-        //     princess.x = 303 + randomizer(1, 4) * 101;
-        // }
-        // if (princess.x === 202 || princess.x === 303) {
-        //     princess.x = 303 + randomizer(1, 3) * 101;
-        // }
-        // if (princess.x === 404 || princess.x === 505) {
-        //     princess.x = 303 - randomizer(1, 4) * 101;
-        // }
-        //
     }
-
-    // if (reachGoal() === true) {
-    //     for (var i = 1; i < 6; i++) {
-    //         this.x = 303 - 101 * i;
-    //     }
-    // }
-            // reachGoal();
-
 }
 var Star = function(x, y) {
     this.sprite = 'images/Star2.png';
@@ -179,15 +158,6 @@ var checkCollision = function(anEnemy) {
         player.x = 303;
         player.y = 383;
     }
-
-    // if (player.y === -35 && player.x + 1 !== princess.x) {
-    //         console.log("Player's y is " + player.y);
-    //         console.log("You went into the water!");
-            
-    //         if (score >= 25) {
-    //             score -= 75;
-    //         }
-    // }
 }
 
 var displayHeartLevel = function(score, heart, level) {
@@ -209,10 +179,11 @@ var reachGoal = function() {
             player.y = 383;
             console.log('You made it!');
             score += 50;
-            for (var i = 0; i < localStorage.length; i++) {
-                if (localStorage[localStorage.length - 1] < score) {
-                    localStorage.setItem("highscore", score);
-                }
+            if (score > localStorage.getItem("highscore")) {
+                localStorage.setItem("highscore", score);
+            }
+            else {
+                localStorage.setItem("highscore", localStorage.getItem("highscore"));
             }
 
             console.log("Your high score is " + localStorage.getItem("highscore"));
@@ -274,23 +245,6 @@ var enemy = createEnemy();
 
 var heart = 0;
 var level = 1;
-
-
-// var scores = [];
-
-// scores.push({highscore: score});
-// localStorage["WinHerLove_HighScores"] = JSON.stringify(scores);
-
-
-// if (localStorage) {
-//     localStorage["WinHerLove_HighScores"] = score;
-// }
-// if (localStorage) {
-//     if (localStorage["WinHerLove_HighScores"] !== undefined) {
-//         scores =  Number(localStorage["WinHerLove_HighScores"]);
-//         console.log(scores);
-//     }
-// }
 
 var randomizer = function(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
