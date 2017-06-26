@@ -242,7 +242,7 @@ var reachGoal = function() {
             player.y = 383;
             player.x = 303;
             score -= 25;
-            localStorage.setItem("highscore", score);
+            // localStorage.setItem("highscore", score);
             ctx.clearRect(princess.x, 0, 101, 250);
             princess.x = -101 + randomizer(2, 8) * 101;
             star.x = princess.x - 5.5;
