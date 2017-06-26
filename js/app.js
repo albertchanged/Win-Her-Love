@@ -208,7 +208,7 @@ var reachGoal = function() {
             console.log('You made it!');
             score += 50;
             localStorage.setItem("highscore", score);
-            
+
             console.log("Your high score is " + localStorage.getItem("highscore"));
 
             ctx.clearRect(princess.x, 0, 101, 250); 
@@ -242,7 +242,7 @@ var reachGoal = function() {
             player.y = 383;
             player.x = 303;
             score -= 25;
-
+            localStorage.setItem("highscore", score);
             ctx.clearRect(princess.x, 0, 101, 250);
             princess.x = -101 + randomizer(2, 8) * 101;
             star.x = princess.x - 5.5;
@@ -269,21 +269,22 @@ var score = 0;
 var heart = 0;
 var level = 1;
 
-var scores = [];
+localStorage.setItem("highscore", 0);
+// var scores = [];
 
-scores.push({highscore: score});
+// scores.push({highscore: score});
 // localStorage["WinHerLove_HighScores"] = JSON.stringify(scores);
 
 
-if (localStorage) {
-    localStorage["WinHerLove_HighScores"] = score;
-}
-if (localStorage) {
-    if (localStorage["WinHerLove_HighScores"] !== undefined) {
-        scores =  Number(localStorage["WinHerLove_HighScores"]);
-        console.log(scores);
-    }
-}
+// if (localStorage) {
+//     localStorage["WinHerLove_HighScores"] = score;
+// }
+// if (localStorage) {
+//     if (localStorage["WinHerLove_HighScores"] !== undefined) {
+//         scores =  Number(localStorage["WinHerLove_HighScores"]);
+//         console.log(scores);
+//     }
+// }
 
 var randomizer = function(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
