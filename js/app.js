@@ -1,4 +1,4 @@
-var score = 0;
+var score = 950;
 // localStorage.clear(); // For testing
 if (localStorage.length === 0) {
     localStorage.setItem("highscore", 0);
@@ -212,8 +212,19 @@ var reachGoal = function() {
             // If the player reaches or is within bounds of 1000, they have beaten the game!
 
             if (score === 1000 || (score < (1026) && (score > (1000)))) {
-                window.alert("Congratulations! You have beaten the game. Don't forget to invite me to your wedding with the Princess!");
-            }
+                score = 1000;
+                var left = (window.width - 500) / 2;
+                var top = (window.height - 500) / 4;
+                
+                window.open("win.html", "_self", "toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no,width='+left+', height='+top+");
+                
+                
+                // var windowName = 'userConsole'; 
+                // var popUp = window.open('/popup-page.php', windowName, 'width=1000, height=700, left=24, top=24, scrollbars, resizable');
+                // if (popUp == null || typeof(popUp)=='undefined') {  
+                //      // window.alert("Congratulations! You have beaten the game. Don't forget to invite me to your wedding with the Princess!");
+                // }
+            } 
             level += 1;
 
             console.log('Score: ' + score + ', Number of Hearts: ' + heart + ', Current Level: ' + level);
@@ -222,7 +233,9 @@ var reachGoal = function() {
         else {
             player.y = 383;
             player.x = 303;
-            score -= 25;
+            if (score >= 25) {
+                score -= 25;
+            }
             // localStorage.setItem("highscore", score);
             ctx.clearRect(princess.x, 0, 101, 250);
             princess.x = -101 + randomizer(2, 8) * 101;
