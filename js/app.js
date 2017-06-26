@@ -64,8 +64,6 @@ Player.prototype.update = function() {
     displayHeartLevel(heart, level);
     reachGoal();
     console.log("player's x is at " + player.x + " and y is at " + player.y);
-
-
 }
 
 Player.prototype.render = function() {
@@ -112,6 +110,7 @@ Princess.prototype.update = function() {
         console.log("player is at " + player.x + " and princess is at " + princess.x);
     }
 }
+
 var Star = function(x, y) {
     this.sprite = 'images/Star2.png';
     this.x = x;
@@ -241,8 +240,6 @@ var reachGoal = function() {
             princess.x = -101 + randomizer(2, 8) * 101;
             star.x = princess.x - 5.5;
         }
-        
-        
     }
 }
 
