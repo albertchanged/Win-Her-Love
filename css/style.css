@@ -1,5 +1,5 @@
 @media only screen and (min-width: 1700px) and (max-width: 3000px) { 
-    	#mobileview {
+    #mobileview {
 		display: none;
 	}
     body {
@@ -45,7 +45,7 @@
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1680px) { 
-    	#mobileview {
+    #mobileview {
 		display: none;
 	}
     body {
@@ -91,7 +91,7 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px) { /*Middle*/
-    	#mobileview {
+    #mobileview {
 		display: none;
 	}
     body {
