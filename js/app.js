@@ -247,7 +247,7 @@ var reachGoal = function() {
 }
 
 var createEnemy = function() {
-    return new Enemy(-100, Math.random() * 184 + 100, Math.random() * 256);
+    return new Enemy(-100, Math.random() * 184 + 100, Math.random() * 320);
 }
 
 var addMoreEnemies = function() {
