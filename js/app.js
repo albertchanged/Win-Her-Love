@@ -210,7 +210,7 @@ var reachGoal = function() {
             scores["highscore"] = score;
             // localStorage.setItem("highscore", score);
 
-            console.log("Your high score is " + scores;
+            console.log("Your high score is " + scores);
 
             ctx.clearRect(princess.x, 0, 101, 250); 
             star.x = -101;
