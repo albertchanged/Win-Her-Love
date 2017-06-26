@@ -289,7 +289,7 @@ if (localStorage) {
 var randomizer = function(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
-console.log(localStorage.getItem("highscore"));
+// console.log(localStorage.getItem("highscore"));
 
 allEnemies.push(enemy);
 
