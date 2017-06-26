@@ -1,3 +1,5 @@
+var score = 0;
+
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
     // Variables applied to each of our instances go here,
@@ -207,7 +209,7 @@ var reachGoal = function() {
             player.y = 383;
             console.log('You made it!');
             score += 50;
-            // localStorage.setItem("highscore", score);
+            localStorage.setItem("highscore", score);
 
             console.log("Your high score is " + localStorage.getItem("highscore"));
 
@@ -265,11 +267,11 @@ var player = new Player(303, 383, 101, 85);
 var star = new Star(297.5, -7.5); // -12
 var princess = new Princess(303, -25);
 var enemy = createEnemy();
-var score = 0;
+
 var heart = 0;
 var level = 1;
 
-localStorage.setItem("highscore", score);
+
 // var scores = [];
 
 // scores.push({highscore: score});
