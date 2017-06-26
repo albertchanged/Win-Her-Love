@@ -1,23 +1,217 @@
-body {
-    text-align: center;
-    margin-top: -1.5px;
+@media only screen and (min-width: 1700px) and (max-width: 3000px) { 
+    	#mobileview {
+		display: none;
+	}
+    body {
+	    text-align: center;
+	    margin-top: 4%;
+	    margin-right: 27.5%;
+	    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box; /* Firefox, other Gecko */
+		box-sizing: border-box; 
+	}
+	#highscore {
+		font-family: Helvetica, Arial;
+		font-size: 20px;
+		position: absolute;
+		top: 11%;
+		right: 45.25%;
+		text-align: right;
+	}
+	#winherlove {
+		font-family: 'Satisfy', cursive;
+		font-size: 50px;
+		position: absolute;
+		top: 8.5%;
+		margin-left: 17.75%;
+		float: left;
+	}
+	#progress-container {
+		font-family: Helvetica, Arial;
+		font-size: 22.5px;
+		margin-top: 5px;
+	}
+	#title {
+		font-family: Helvetica, Arial;
+		font-size: 17.5px;
+		line-height: 19px;
+		margin-top: 12.5px;
+		width: 20%; 
+		position: absolute;
+		top: 22.25%; 
+		right: 20%; 
+		text-align: left;
+	}
 }
 
+@media only screen and (min-width: 1600px) and (max-width: 1680px) { 
+    	#mobileview {
+		display: none;
+	}
+    body {
+	    text-align: center;
+	    margin-top: 6%;
+	    margin-right: 27.5%;
+	    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box; /* Firefox, other Gecko */
+		box-sizing: border-box; 
+	}
+	#highscore {
+		font-family: Helvetica, Arial;
+		font-size: 20px;
+		position: absolute;
+		top: 13.5%;
+		right: 42.5%;
+		text-align: right;
+	}
+	#winherlove {
+		font-family: 'Satisfy', cursive;
+		font-size: 50px;
+		position: absolute;
+		top: 11%;
+		margin-left: 15.25%;
+		float: left;
+	}
+	#progress-container {
+		font-family: Helvetica, Arial;
+		font-size: 22.5px;
+		margin-top: 5px;
+	}
+	#title {
+		font-family: Helvetica, Arial;
+		font-size: 17.5px;
+		line-height: 19px;
+		margin-top: 12.5px;
+		width: 20%; 
+		position: absolute;
+		top: 18.5%; 
+		right: 18%; 
+		text-align: left;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) { /*Middle*/
+    	#mobileview {
+		display: none;
+	}
+    body {
+	    text-align: center;
+	    margin-top: 3%;
+	    margin-right: 27.5%;
+	    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box; /* Firefox, other Gecko */
+		box-sizing: border-box; 
+	}
+	#highscore {
+		font-family: Helvetica, Arial;
+		font-size: 22.5px;
+		position: absolute;
+		top: 9.25%;
+		right: 39%;
+		text-align: right;
+	}
+	#winherlove {
+		font-family: 'Satisfy', cursive;
+		font-size: 50px;
+		position: absolute;
+		top: 6.5%;
+		margin-left: 11.75%;
+		float: left;
+	}
+	#progress-container {
+		font-family: Helvetica, Arial;
+		font-size: 22.5px;
+		margin-top: 3px;
+	}
+	#title {
+		font-family: Helvetica, Arial;
+		font-size: 17.5px;
+		line-height: 19px;
+		margin-top: 12.5px;
+		width: 23%; 
+		position: absolute; 
+		top: 15%; 
+		right: 11%; 
+		text-align: left;
+	}
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {  /*Default*/
+	#mobileview {
+		display: none;
+	}
+	body {
+	    text-align: center;
+	    margin-top: -2px;
+	    margin-right: 27.5%;
+	    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box; /* Firefox, other Gecko */
+		box-sizing: border-box; 
+	}
+	#highscore {
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		position: absolute;
+		top: 4.25%;
+		right: 36%;
+		text-align: right;
+	}
+	#winherlove {
+		font-family: 'Satisfy', cursive;
+		font-size: 50px;
+		position: absolute;
+		top: 1%;
+		margin-left: 8.75%;
+		float: left;
+	}
+	#progress-container {
+		font-family: 'Roboto', sans-serif;
+		font-size: 22.5px;
+		margin-top: 3px;
+	}
+	#title {
+		color: #424242;
+		font-family: 'Roboto', sans-serif;
+		font-size: 17px;
+		line-height: 19px;
+		/*margin-top: 12.5px;*/
+		width: 25%; 
+		position: absolute; 
+		top: 10.75%; 
+		right: 8%; 
+		text-align: left;
+	}
+}
+
+@media (max-width: 1000px) {
+	#mobileview {
+		font-family: 'Roboto', sans-serif;
+		font-size: 25px;
+		display: block;
+		text-align: center;
+		margin-top: 50px;
+		margin-left: 25px;
+		margin-right: 25px;
+		margin-bottom: 25px;
+	}
+	canvas {
+		display: none;
+	}
+	#highscore {
+		display: none;
+	}
+	#winherlove {
+		display: none;
+	}
+	#progress-container {
+		display: none;
+	}
+	#title {
+		display: none;
+	}
+}
 canvas {
-	margin-top: -15px;
-}
-
-#title {
-	font-family: Helvetica;
-	font-size: 17.5px;
-	line-height: 20px;
-	margin-top: 12.5px;
-}
-
-#progress-container {
-	font-family: Helvetica;
-	font-size: 22.5px;
-	margin-top: -4px;
+	margin-top: 35px;
 }
 
 #credits {

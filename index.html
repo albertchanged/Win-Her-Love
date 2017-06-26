@@ -4,27 +4,66 @@
     <meta charset="UTF-8">
     <title>Win Her Love</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- font-family: 'Marck Script', cursive; -->
+    <!-- font-family: 'Satisfy', cursive; -->
+    <!-- font-family: 'Roboto', sans-serif; -->
 </head>
 <body>
-	<div id="title">
-	Travel with your ←→↑↓ keys to collect <img src="images/Heart3.png" style="vertical-align: middle; height: 1.25em"> from the <img src="images/char-princess-girl2.png" style="vertical-align: middle; height: 1.25em">, earning 50 points each time.<br>You lose 25 points per <img src="images/enemy-bug2.png" style="vertical-align: middle; height: 1.25em"> encounter! <strong>To beat the game, you must reach 1000 points</strong>.
-	</div>
 
-    <script src="js/resources.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/engine.js"></script>
-    <div id = "gamecanvas">
-    </div>
+	<div id="title">
+		<strong><span style="font-size: 28px; color: black">HOW TO PLAY</span></strong>
+		<br><br>
+		You have UNLIMITED LIVES.
+		<br><br>
+		<strong>1.</strong> Cross the path using your ←→↑↓ keys.
+		<br><br>
+		<strong>2.</strong> Gain 50 points per <img src="images/Heart3.png" style="vertical-align: middle; height: 1.25em"> given by the <img src="images/char-princess-girl2.png" style="vertical-align: middle; height: 1.25em">.
+		<br><br>
+		But be careful!
+		<br><br>
+		You lose 25 points per <img src="images/water-block3.png" style="vertical-align: middle; height: 0.95em"> and <img src="images/enemy-bug2.png" style="vertical-align: middle; height: 1.25em"> contact.
+		<br><br>
+		<strong>To beat the game and Win Her Love, you must accumulate 1000 points!</strong>
+		<br><br><hr><br>
+		<span style="line-height: 22.5px; font-size: 15px">Developed by <a href="http://www.albertchanged.me" target="_blank" style="text-decoration: none" ><strong>Albert Chang</strong></a> using the artwork and engine provided in <a href="https://www.udacity.com/" target="_blank" style="text-decoration: none">Udacity's</a> <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" target="_blank" style="text-decoration: none"> <strong>Front-End Web Developer Nanodegree</strong></a> course.
+		<br><br>
+		Heavily inspired by <a href="https://www.gaming.konami.com/Games/Featured/Frogger.aspx" target="_blank" style="text-decoration: none">Frogger®</a> with little twists by yours truly!<br><br></span>
+		<span style="font-size: 14px">Music: <a href="https://soundcloud.com/dexterbritain/the-time-to-run-finale" target="_blank" style="text-decoration: none">The Time To Run (Finale) - Dexter Britain</a></span>
+		<audio controls loop>
+		    <source src="images/thetimetorun.mp3" type="audio/mpeg">
+		    Your browser does not support the audio element.
+		</audio>
+	</div>
+	<div id="container">
+		<div id="winherlove">
+		</div>
+		<div id="highscore">
+		</div>
+	    <script src="js/resources.js"></script>
+	    <script src="js/app.js"></script>
+	    <script src="js/engine.js"></script>
+	</div>
     <div id="progress-container">
     	<span id="scores"></span>
 	    <span id="hearts"></span>
 	    <span id="levels"></span>
+	    <!-- <span id="highscore"></span> -->
     </div>
-    <!-- <br style="line-height: 10px"> -->
-    
-    <!-- <div id="credits">
-    <br><br>
-    	Made by <a href="http://www.albertchanged.me" target="_blank" style="text-decoration: none" ><strong>Albert Chang</strong></a> for <a href="https://www.udacity.com/" target="_blank" style="text-decoration: none">Udacity's</a> <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" target="_blank" style="text-decoration: none"> <strong>Front-End Web Developer Nanodegree</strong></a> course.
-    </div> -->
+    <div id="mobileview">
+    <img src="images/char-boy-tear.png" style="width: 25%">
+    <p style="color: black"><span style="font-family: 'Satisfy', cursive; font-size: 35px">Deepest apologies!</span><br><br>'Win Her Love' will not work on your device because it requires a physical keyboard.<br><br>Please try again on a desktop or laptop computer.<br><br>Thank you for your understanding.<br><br> <em>Best regards, Albert Chang</em></p>
+    </div>
 </body>
 </html>
