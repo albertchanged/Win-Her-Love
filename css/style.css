@@ -212,15 +212,15 @@
 }
 
 #winview {
-		font-family: 'Roboto', sans-serif;
-		font-size: 19px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 19px;
 	position: fixed;
 	left: 50%;
-	top: 44%;
+	top: 46%;
 	-ms-transform: translate(-50%,-50%);
--moz-transform:translate(-50%,-50%);
--webkit-transform: translate(-50%,-50%);
- transform: translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
 canvas {
 	margin-top: 35px;
