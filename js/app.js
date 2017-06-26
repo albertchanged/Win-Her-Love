@@ -230,7 +230,7 @@ var reachGoal = function() {
                 window.alert("Congratulations! You have beaten the game. Don't forget to invite me to your wedding with the Princess!");
             }
             level += 1;
-            localStorage.setItem("highscore", score);
+
             // console.log("Your high score is " + localStorage.getItem("highscore"));
             console.log('Score: ' + score + ', Number of Hearts: ' + heart + ', Current Level: ' + level);
             addMoreEnemies();
@@ -267,7 +267,8 @@ var heart = 0;
 var level = 1;
 
 var scores = [];
-scores.push({highscore: score});
+localStorage.setItem("highscore", score);
+// scores.push({highscore: score});
 // localStorage["WinHerLove_HighScores"] = JSON.stringify(scores);
 
 
