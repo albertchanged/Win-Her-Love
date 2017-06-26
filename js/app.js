@@ -207,7 +207,7 @@ var reachGoal = function() {
             player.y = 383;
             console.log('You made it!');
             score += 50;
-            localStorage.setItem("highscore", score);
+            // localStorage.setItem("highscore", score);
 
             console.log("Your high score is " + localStorage.getItem("highscore"));
 
