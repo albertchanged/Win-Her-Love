@@ -195,10 +195,11 @@ var displayHeartLevel = function(score, heart, level) {
     document.getElementById('levels').innerHTML = "<strong>On Path:</strong> " + "<span style='font-size: 27.5px'>" + this.level + " </span><img src='images/enemy-bug2.png' style='vertical-align: middle; height: 1.5em'>";
     document.getElementById('winherlove').innerHTML ="Win Her <span style='color: #D00000'>Love</span>";
     // document.getElementById('winherlove').innerHTML ="Win Her <span style='color: #DF0101'>Love</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='font-family: Helvetica, Arial; font-size: 25px; margin-top: 20%'><strong>High Score:</strong> " + "<span style='font-size: 27.5px'>" + localStorage.getItem("highscore") + "</span></span>";
-    document.getElementById('highscore').innerHTML = "<strong>High Score:</strong> " + "<span style='font-size: 25px'>" + localStorage.getItem("highscore") + "</span>";
+    document.getElementById('highscore').innerHTML = "<strong>High Score:</strong> " + "<span style='font-size: 25px'>" + scores + "</span>";
 }
 
 var reachGoal = function() {
+
     if (player.y < 0) {   
         if (Math.abs(princess.x - player.x) < 10) {  
             heart += 1;
@@ -206,7 +207,9 @@ var reachGoal = function() {
             player.y = 383;
             console.log('You made it!');
             score += 50;
+            localStorage.setItem("highscore", score);
 
+            console.log("Your high score is " + localStorage.getItem("highscore"));
 
             ctx.clearRect(princess.x, 0, 101, 250); 
             star.x = -101;
@@ -226,13 +229,12 @@ var reachGoal = function() {
             // }
             
             // If the player reaches or is within bounds of 1000, they have beaten the game!
-            localStorage.setItem("highscore", score);
+
             if (score === 1000 || (score < (1026) && (score > (1000)))) {
                 window.alert("Congratulations! You have beaten the game. Don't forget to invite me to your wedding with the Princess!");
             }
             level += 1;
 
-            // console.log("Your high score is " + localStorage.getItem("highscore"));
             console.log('Score: ' + score + ', Number of Hearts: ' + heart + ', Current Level: ' + level);
             addMoreEnemies();
         }
@@ -267,9 +269,9 @@ var score = 0;
 var heart = 0;
 var level = 1;
 
-// var scores = [];
+var scores = [];
 
-// scores.push({highscore: score});
+scores.push({highscore: score});
 // localStorage["WinHerLove_HighScores"] = JSON.stringify(scores);
 
 
