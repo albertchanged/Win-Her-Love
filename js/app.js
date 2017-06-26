@@ -195,7 +195,7 @@ var displayHeartLevel = function(score, heart, level) {
     document.getElementById('levels').innerHTML = "<strong>On Path:</strong> " + "<span style='font-size: 27.5px'>" + this.level + " </span><img src='images/enemy-bug2.png' style='vertical-align: middle; height: 1.5em'>";
     document.getElementById('winherlove').innerHTML ="Win Her <span style='color: #D00000'>Love</span>";
     // document.getElementById('winherlove').innerHTML ="Win Her <span style='color: #DF0101'>Love</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='font-family: Helvetica, Arial; font-size: 25px; margin-top: 20%'><strong>High Score:</strong> " + "<span style='font-size: 27.5px'>" + localStorage.getItem("highscore") + "</span></span>";
-    document.getElementById('highscore').innerHTML = "<strong>High Score:</strong> " + "<span style='font-size: 25px'>" + scores + "</span>";
+    document.getElementById('highscore').innerHTML = "<strong>High Score:</strong> " + "<span style='font-size: 25px'>" + localStorage.getItem("highscore") + "</span>";
 }
 
 var reachGoal = function() {
@@ -207,10 +207,9 @@ var reachGoal = function() {
             player.y = 383;
             console.log('You made it!');
             score += 50;
-            scores["highscore"] = score;
-            // localStorage.setItem("highscore", score);
-
-            console.log("Your high score is " + scores);
+            localStorage.setItem("highscore", score);
+            
+            console.log("Your high score is " + localStorage.getItem("highscore"));
 
             ctx.clearRect(princess.x, 0, 101, 250); 
             star.x = -101;
@@ -289,7 +288,7 @@ if (localStorage) {
 var randomizer = function(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
-// console.log(localStorage.getItem("highscore"));
+console.log(localStorage.getItem("highscore"));
 
 allEnemies.push(enemy);
 
