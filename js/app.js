@@ -269,7 +269,7 @@ var score = 0;
 var heart = 0;
 var level = 1;
 
-localStorage.setItem("highscore", 0);
+localStorage.setItem("highscore", score);
 // var scores = [];
 
 // scores.push({highscore: score});
