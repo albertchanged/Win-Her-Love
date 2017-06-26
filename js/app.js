@@ -34,6 +34,10 @@ Enemy.prototype.update = function(dt) {
         this.x = -100;
         this.y = Math.random() * 200 + 75; 
     }
+
+    if (level > 15) {
+        level = 15;
+    }
     checkCollision(this);
     reachGoal();
 };
