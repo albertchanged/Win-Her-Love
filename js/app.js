@@ -1,4 +1,4 @@
-var score = 950;
+var score = 0;
 // localStorage.clear(); // For testing
 if (localStorage.length === 0) {
     localStorage.setItem("highscore", 0);
